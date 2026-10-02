@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Atelier Corte — Barbering for Americans in Brazil</title>
+  <meta name="description" content="Atelier Corte in Ipanema. Barbering for Americans in Brazil. English through the appointment. Prices in USD.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to the cut</a>
+
+  <header class="nav">
+    <a class="wordmark" href="#top">Atelier Corte</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <span>Menu</span>
+    </button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#visit">Visit</a>
+      <a class="book" href="#book">Book</a>
+    </nav>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <p class="menu-kicker">Barbering for Americans in Brazil.</p>
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#visit">Visit</a>
+    <a class="book" href="#book">Book</a>
+  </div>
+
+  <main id="content">
+    <section class="hero" id="top">
+      <div class="hero-lead">
+        <p class="deck">Barbering for Americans in Brazil.</p>
+        <p class="deck-sub">English through the appointment.</p>
+        <p class="place"><span class="rule" aria-hidden="true"></span><span>Ipanema · Rio de Janeiro</span></p>
+      </div>
+      <div class="hero-media">
+        <img src="images/hero.jpg" alt="A barber, in profile, cutting a client’s hair with scissors.">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <h1 class="corte">Corte</h1>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="folio">
+        <span>Work</span>
+        <span class="slide-hint">01 — 04</span>
+      </div>
+      <div class="reel" tabindex="0" aria-label="Four cuts">
+        <figure>
+          <img src="images/fade.jpg" alt="A barber refining a fade with clippers along the temple.">
+          <figcaption>
+            <span>01</span>
+            <strong>Fade</strong>
+            <em>Skin, then a slow blend.</em>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/scissor.jpg" alt="Silver scissors lifted in a barber’s hand.">
+          <figcaption>
+            <span>02</span>
+            <strong>Scissor cut</strong>
+            <em>Shears. No clipper on top.</em>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/beard.jpg" alt="Close portrait of a man with a full, shaped beard.">
+          <figcaption>
+            <span>03</span>
+            <strong>Beard</strong>
+            <em>Line, weight, the jaw.</em>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/shave.jpg" alt="A straight razor drawn along a client’s cheek.">
+          <figcaption>
+            <span>04</span>
+            <strong>Hot towel</strong>
+            <em>Steam, then the razor.</em>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="folio">
+        <span>Services</span>
+        <span>USD first · BRL at the chair</span>
+      </div>
+      <ol class="index">
+        <li>
+          <span class="num" aria-hidden="true">01</span>
+          <div class="svc-copy">
+            <h2>Scissor cut</h2>
+            <p>Shears only. Nothing clipped on top.</p>
+            <span class="mins">45 min</span>
+          </div>
+          <p class="price"><span class="usd">$35</span><span class="brl">R$190</span></p>
+        </li>
+        <li>
+          <span class="num" aria-hidden="true">02</span>
+          <div class="svc-copy">
+            <h2>Skin fade</h2>
+            <p>Tight at the skin. Clean through the week.</p>
+            <span class="mins">45 min</span>
+          </div>
+          <p class="price"><span class="usd">$40</span><span class="brl">R$220</span></p>
+        </li>
+        <li>
+          <span class="num" aria-hidden="true">03</span>
+          <div class="svc-copy">
+            <h2>Beard sculpt</h2>
+            <p>The line of the jaw. Nothing extra.</p>
+            <span class="mins">30 min</span>
+          </div>
+          <p class="price"><span class="usd">$20</span><span class="brl">R$110</span></p>
+        </li>
+        <li>
+          <span class="num" aria-hidden="true">04</span>
+          <div class="svc-copy">
+            <h2>Cut &amp; beard</h2>
+            <p>Hair and beard. One sitting.</p>
+            <span class="mins">75 min</span>
+          </div>
+          <p class="price"><span class="usd">$50</span><span class="brl">R$270</span></p>
+        </li>
+        <li>
+          <span class="num" aria-hidden="true">05</span>
+          <div class="svc-copy">
+            <h2>Hot towel shave</h2>
+            <p>Steam, steel, a quiet finish.</p>
+            <span class="mins">30 min</span>
+          </div>
+          <p class="price"><span class="usd">$30</span><span class="brl">R$160</span></p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="pull" aria-label="Note from a client">
+      <blockquote>
+        <p>English the whole hour.<br>A real cut, work trip.</p>
+        <cite>Elena · New York</cite>
+      </blockquote>
+    </section>
+
+    <figure class="room">
+      <img src="images/room.jpg" alt="A quiet barbershop: leather chair, dark wood, and a wall of bottles.">
+      <figcaption>The chair · Rua Conceição</figcaption>
+    </figure>
+
+    <section class="visit" id="visit">
+      <div class="folio">
+        <span>Visit</span>
+        <span>Ipanema</span>
+      </div>
+      <div class="visit-grid">
+        <article>
+          <h2>Language</h2>
+          <p>English entire visit.</p>
+        </article>
+        <article>
+          <h2>Pay</h2>
+          <p>Card and Pix.</p>
+        </article>
+        <article>
+          <h2>Time</h2>
+          <p>Tell us your US timezone. The shop runs on BRT.</p>
+        </article>
+      </div>
+      <p class="addr">Rua Conceição, Ipanema, Rio de Janeiro</p>
+      <p class="hours">Tue–Sat 10:00–19:00 BRT. Closed Sun–Mon.</p>
+    </section>
+
+    <section class="request" id="book">
+      <div class="request-inner">
+        <p class="folio folio-invert"><span>Book</span></p>
+        <h2>Request a chair.</h2>
+        <form id="chair-form" novalidate>
+          <div class="fields">
+            <label>Name
+              <input name="name" type="text" autocomplete="name" required>
+            </label>
+            <label>Email
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+            <label>Service
+              <select name="service" required>
+                <option value="Scissor cut">Scissor cut — $35</option>
+                <option value="Skin fade">Skin fade — $40</option>
+                <option value="Beard sculpt">Beard sculpt — $20</option>
+                <option value="Cut &amp; beard">Cut &amp; beard — $50</option>
+                <option value="Hot towel shave">Hot towel shave — $30</option>
+              </select>
+            </label>
+            <label>Day
+              <input name="day" type="date" required>
+            </label>
+            <label class="wide">Timezone
+              <select name="timezone" required>
+                <option value="America/New_York">Eastern — New York</option>
+                <option value="America/Chicago">Central — Chicago</option>
+                <option value="America/Denver">Mountain — Denver</option>
+                <option value="America/Los_Angeles">Pacific — Los Angeles</option>
+                <option value="America/Anchorage">Alaska</option>
+                <option value="Pacific/Honolulu">Hawaii</option>
+                <option value="America/Sao_Paulo">Brasília — BRT</option>
+              </select>
+            </label>
+            <label class="wide">Note
+              <textarea name="note" rows="3" placeholder="How you wear it. When you land."></textarea>
+            </label>
+          </div>
+          <button type="submit">Send request</button>
+        </form>
+        <p class="confirm" hidden>Request received — this preview does not send yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <p>Atelier Corte</p>
+    <p class="disclaimer">Concept preview. Name, address, prices, and quotes are placeholders.</p>
+  </footer>
+
+  <a class="book-fab" href="#book">Book</a>
+  <script src="main.js"></script>
+</body>
+</html>
