@@ -1,6 +1,7 @@
 # Configuração do painel administrativo (Pages CMS — https://pagescms.org).
 # O login é feito com a conta do GitHub: nenhuma senha ou chave fica neste repositório.
 # Cada alteração salva no painel vira um commit neste repositório e o GitHub Pages publica sozinho.
+# Textos com dois-pontos seguidos de espaço precisam ficar entre aspas.
 
 media:
   input: images
@@ -20,23 +21,27 @@ content:
         type: string
         required: true
       - name: role
-        label: Profissão (aparece abaixo do nome)
+        label: Profissão
+        description: Aparece abaixo do nome.
         type: string
       - name: headline
         label: Frase principal
         type: string
       - name: intro
-        label: Texto de apresentação (topo do site)
+        label: Texto de apresentação
+        description: Aparece no topo do site.
         type: text
       - name: heroImage
-        label: Foto principal (topo do site). Prefira foto em pé (vertical)
+        label: Foto principal
+        description: Foto do topo do site. Prefira uma foto em pé (vertical).
         type: image
       - name: heroImageAlt
         label: Descrição da foto principal
+        description: Usada por leitores de tela e pelo Google.
         type: string
 
       - name: about
-        label: Seção "Sobre"
+        label: Seção Sobre
         type: object
         fields:
           - name: title
@@ -49,7 +54,8 @@ content:
             label: Foto
             type: image
           - name: imageAlt
-            label: Descrição da foto (para acessibilidade e Google)
+            label: Descrição da foto
+            description: Usada por leitores de tela e pelo Google.
             type: string
 
       - name: contact
@@ -57,16 +63,19 @@ content:
         type: object
         fields:
           - name: whatsappNumber
-            label: WhatsApp (só números, com 55 e DDD. Ex.: 5521966015528)
+            label: WhatsApp
+            description: "Só números, com 55 e DDD. Exemplo: 5521966015528"
             type: string
           - name: phoneDisplay
             label: Telefone como aparece no site
             type: string
           - name: whatsappMessage
-            label: Mensagem que já vem escrita no WhatsApp
+            label: Mensagem pronta do WhatsApp
+            description: Texto que já vem escrito quando o cliente abre a conversa.
             type: string
           - name: instagramUser
-            label: Usuário do Instagram (sem @)
+            label: Usuário do Instagram
+            description: Sem o @.
             type: string
           - name: instagramUrl
             label: Link do Instagram
@@ -107,10 +116,12 @@ content:
         list: true
         fields:
           - name: days
-            label: Dias (ex.: Segunda a sábado)
+            label: Dias
+            description: "Exemplo: Segunda a sábado"
             type: string
           - name: time
-            label: Horário (ex.: 09:00 – 20:00)
+            label: Horário
+            description: "Exemplo: 09:00 – 20:00"
             type: string
       - name: hoursNote
         label: Observação sobre os horários
@@ -138,10 +149,12 @@ content:
             label: Descrição curta
             type: string
           - name: duration
-            label: Duração (ex.: 45 min). Deixe vazio para não mostrar
+            label: Duração
+            description: "Exemplo: 45 min. Deixe vazio para não mostrar."
             type: string
           - name: price
-            label: Preço (ex.: R$ 60). Deixe vazio para mostrar "Consulte no Trinks"
+            label: Preço
+            description: "Exemplo: R$ 60. Deixe vazio para mostrar Consulte no Trinks."
             type: string
 
       - name: gallery
@@ -153,7 +166,8 @@ content:
             label: Foto
             type: image
           - name: alt
-            label: Descrição da foto (para acessibilidade e Google)
+            label: Descrição da foto
+            description: Usada por leitores de tela e pelo Google.
             type: string
           - name: caption
             label: Legenda curta
