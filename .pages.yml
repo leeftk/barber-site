@@ -49,6 +49,7 @@ content:
             type: string
           - name: text
             label: Texto
+            description: Deixe uma linha em branco para começar um novo parágrafo.
             type: text
           - name: image
             label: Foto

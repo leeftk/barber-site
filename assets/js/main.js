@@ -59,6 +59,18 @@
     });
   }
 
+  // Uma linha em branco no texto separa os parágrafos.
+  function applyParagraphs(data) {
+    document.querySelectorAll("[data-paragraphs]").forEach(function (node) {
+      var value = get(data, node.getAttribute("data-paragraphs"));
+      if (!filled(value)) return;
+      node.textContent = "";
+      value.split(/\n\s*\n/).forEach(function (paragraph) {
+        if (filled(paragraph)) node.appendChild(create("p", "lead", paragraph.trim()));
+      });
+    });
+  }
+
   function applyLinks(links) {
     document.querySelectorAll("[data-link]").forEach(function (node) {
       var url = links[node.getAttribute("data-link")];
@@ -185,6 +197,7 @@
       .then(function (data) {
         var links = buildLinks(data);
         applyText(data);
+        applyParagraphs(data);
         applyLinks(links);
         applyImages(data);
         applyLists(data);
