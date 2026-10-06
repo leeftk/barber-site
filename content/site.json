@@ -1,0 +1,81 @@
+{
+  "name": "Matheus Schiavone",
+  "role": "Barbeiro em Ipanema",
+  "headline": "Corte e barba com hora marcada, em Ipanema.",
+  "intro": "Atendimento na Ipa Barber Shop, no coração de Ipanema. Escolha o serviço e o horário direto no Trinks, ou chame no WhatsApp.",
+  "heroImage": "images/matheus-schiavone.jpg",
+  "heroImageAlt": "Matheus Schiavone fazendo um degradê com máquina e pente em um cliente, na barbearia.",
+  "about": {
+    "title": "Quem é Matheus Schiavone",
+    "text": "Matheus Schiavone é barbeiro na Ipa Barber Shop, em Ipanema, Rio de Janeiro. Cada atendimento começa com uma conversa rápida sobre o que você quer, para o corte e a barba saírem do seu jeito.",
+    "image": "images/logo.jpg",
+    "imageAlt": "Logo de Matheus Schiavone: monograma MS prateado com uma coroa."
+  },
+  "contact": {
+    "whatsappNumber": "5521966015528",
+    "phoneDisplay": "+55 21 96601-5528",
+    "whatsappMessage": "Olá, Matheus! Vim pelo site e gostaria de agendar um horário.",
+    "instagramUser": "br.matheus.schiavone",
+    "instagramUrl": "https://www.instagram.com/br.matheus.schiavone/",
+    "bookingUrl": "https://www.trinks.com/ipa-barber-shop",
+    "googleUrl": "https://www.google.com/maps/search/?api=1&query=Matheus+Schiavone+Barber%2C+Rio+de+Janeiro%2C+RJ"
+  },
+  "location": {
+    "shopName": "Ipa Barber Shop",
+    "street": "Rua Prudente de Morais, 167, Loja A",
+    "district": "Ipanema",
+    "city": "Rio de Janeiro",
+    "state": "RJ",
+    "zip": "22420-041"
+  },
+  "hours": [
+    { "days": "Segunda a sábado", "time": "09:00 – 20:00" },
+    { "days": "Domingo", "time": "10:00 – 16:00" }
+  ],
+  "hoursNote": "Horário de funcionamento da Ipa Barber Shop. Os horários livres do Matheus aparecem no Trinks.",
+  "payments": "Cartões de crédito e débito, PIX e dinheiro",
+  "languages": "Português, inglês e espanhol",
+  "servicesNote": "Valores e duração atualizados no Trinks, na hora de agendar.",
+  "services": [
+    {
+      "name": "Corte",
+      "description": "Corte masculino com acabamento.",
+      "duration": "",
+      "price": ""
+    },
+    {
+      "name": "Barba",
+      "description": "Desenho, alinhamento e acabamento da barba.",
+      "duration": "",
+      "price": ""
+    },
+    {
+      "name": "Corte + barba",
+      "description": "Os dois serviços no mesmo horário.",
+      "duration": "",
+      "price": ""
+    }
+  ],
+  "gallery": [
+    {
+      "image": "images/portfolio-degrade.jpg",
+      "alt": "Cliente de perfil com cabelo curto e degradê alto nas laterais.",
+      "caption": "Degradê"
+    },
+    {
+      "image": "images/portfolio-cachos.jpg",
+      "alt": "Cliente de perfil com cabelo cacheado, laterais baixas e barba alinhada.",
+      "caption": "Cachos e barba"
+    },
+    {
+      "image": "images/portfolio-degrade-textura.jpg",
+      "alt": "Cliente de perfil com degradê nas laterais e textura no topo.",
+      "caption": "Degradê com textura"
+    },
+    {
+      "image": "images/portfolio-ferramentas.jpg",
+      "alt": "Tesouras, pente, máquinas de corte e pomadas sobre uma bancada de madeira.",
+      "caption": "Ferramentas"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+# Configuração do painel administrativo (Pages CMS — https://pagescms.org).
+# O login é feito com a conta do GitHub: nenhuma senha ou chave fica neste repositório.
+# Cada alteração salva no painel vira um commit neste repositório e o GitHub Pages publica sozinho.
+
+media:
+  input: images
+  output: images
+  categories: [image]
+  rename: safe
+
+content:
+  - name: site
+    label: Informações do site
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: name
+        label: Nome
+        type: string
+        required: true
+      - name: role
+        label: Profissão (aparece abaixo do nome)
+        type: string
+      - name: headline
+        label: Frase principal
+        type: string
+      - name: intro
+        label: Texto de apresentação (topo do site)
+        type: text
+      - name: heroImage
+        label: Foto principal (topo do site). Prefira foto em pé (vertical)
+        type: image
+      - name: heroImageAlt
+        label: Descrição da foto principal
+        type: string
+
+      - name: about
+        label: Seção "Sobre"
+        type: object
+        fields:
+          - name: title
+            label: Título
+            type: string
+          - name: text
+            label: Texto
+            type: text
+          - name: image
+            label: Foto
+            type: image
+          - name: imageAlt
+            label: Descrição da foto (para acessibilidade e Google)
+            type: string
+
+      - name: contact
+        label: Contatos e links
+        type: object
+        fields:
+          - name: whatsappNumber
+            label: WhatsApp (só números, com 55 e DDD. Ex.: 5521966015528)
+            type: string
+          - name: phoneDisplay
+            label: Telefone como aparece no site
+            type: string
+          - name: whatsappMessage
+            label: Mensagem que já vem escrita no WhatsApp
+            type: string
+          - name: instagramUser
+            label: Usuário do Instagram (sem @)
+            type: string
+          - name: instagramUrl
+            label: Link do Instagram
+            type: string
+          - name: bookingUrl
+            label: Link de agendamento (Trinks)
+            type: string
+          - name: googleUrl
+            label: Link do perfil no Google
+            type: string
+
+      - name: location
+        label: Endereço
+        type: object
+        fields:
+          - name: shopName
+            label: Nome da barbearia
+            type: string
+          - name: street
+            label: Rua, número e complemento
+            type: string
+          - name: district
+            label: Bairro
+            type: string
+          - name: city
+            label: Cidade
+            type: string
+          - name: state
+            label: Estado (sigla)
+            type: string
+          - name: zip
+            label: CEP
+            type: string
+
+      - name: hours
+        label: Horários
+        type: object
+        list: true
+        fields:
+          - name: days
+            label: Dias (ex.: Segunda a sábado)
+            type: string
+          - name: time
+            label: Horário (ex.: 09:00 – 20:00)
+            type: string
+      - name: hoursNote
+        label: Observação sobre os horários
+        type: string
+
+      - name: payments
+        label: Formas de pagamento
+        type: string
+      - name: languages
+        label: Idiomas do atendimento
+        type: string
+
+      - name: servicesNote
+        label: Observação sobre os serviços
+        type: string
+      - name: services
+        label: Serviços
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Nome do serviço
+            type: string
+          - name: description
+            label: Descrição curta
+            type: string
+          - name: duration
+            label: Duração (ex.: 45 min). Deixe vazio para não mostrar
+            type: string
+          - name: price
+            label: Preço (ex.: R$ 60). Deixe vazio para mostrar "Consulte no Trinks"
+            type: string
+
+      - name: gallery
+        label: Portfólio (fotos)
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Foto
+            type: image
+          - name: alt
+            label: Descrição da foto (para acessibilidade e Google)
+            type: string
+          - name: caption
+            label: Legenda curta
+            type: string

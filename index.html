@@ -1,121 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Barber site concepts</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --ink: #1c1915;
-      --muted: #5e574e;
-      --paper: #f6f1e8;
-      --line: #e2d9cc;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
-      background: var(--paper);
-      color: var(--ink);
-    }
-    main {
-      max-width: 42rem;
-      margin: 0 auto;
-      padding: 4.5rem 1.4rem 5rem;
-    }
-    p.kicker {
-      margin: 0 0 0.8rem;
-      font-family: "Gill Sans", "Trebuchet MS", sans-serif;
-      font-size: 0.78rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    h1 {
-      margin: 0;
-      font-weight: 500;
-      font-size: clamp(2.4rem, 6vw, 3.6rem);
-      letter-spacing: -0.03em;
-      line-height: 0.95;
-    }
-    .lead {
-      margin: 1.2rem 0 2.4rem;
-      max-width: 34rem;
-      font-size: 1.15rem;
-      line-height: 1.45;
-    }
-    ol {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      border-top: 1px solid var(--line);
-    }
-    li { border-bottom: 1px solid var(--line); }
-    a.option {
-      display: grid;
-      grid-template-columns: 2.2rem 1fr;
-      gap: 0.2rem 0.8rem;
-      padding: 1.15rem 0;
-      color: inherit;
-      text-decoration: none;
-    }
-    a.option:hover .name { text-decoration: underline; text-underline-offset: 0.18em; }
-    .num, .blurb, footer {
-      font-family: "Gill Sans", "Trebuchet MS", sans-serif;
-    }
-    .num {
-      grid-row: span 2;
-      padding-top: 0.35rem;
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-    .name {
-      font-size: 1.7rem;
-      letter-spacing: -0.02em;
-    }
-    .blurb {
-      color: var(--muted);
-      font-size: 0.98rem;
-      line-height: 1.4;
-    }
-    footer {
-      margin-top: 2rem;
-      color: var(--muted);
-      font-size: 0.85rem;
-      line-height: 1.45;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Matheus Schiavone | Barbeiro em Ipanema, Rio de Janeiro</title>
+  <meta name="description" content="Matheus Schiavone, barbeiro na Ipa Barber Shop em Ipanema, Rio de Janeiro. Corte e barba com hora marcada: agende pelo Trinks ou fale pelo WhatsApp.">
+  <link rel="canonical" href="https://leeftk.github.io/barber-site/">
+  <meta name="theme-color" content="#11100e">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Matheus Schiavone">
+  <meta property="og:title" content="Matheus Schiavone | Barbeiro em Ipanema">
+  <meta property="og:description" content="Corte e barba com hora marcada na Ipa Barber Shop, em Ipanema. Agende pelo Trinks ou fale pelo WhatsApp.">
+  <meta property="og:url" content="https://leeftk.github.io/barber-site/">
+  <meta property="og:image" content="https://leeftk.github.io/barber-site/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo MS de Matheus Schiavone ao lado de uma foto dele cortando o cabelo de um cliente.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/sora-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <main>
-    <p class="kicker">English-speaking barber · Brazil</p>
-    <h1>Three ways to put the shop online.</h1>
-    <p class="lead">Pick a direction. Each one is in English, shows prices in dollars, and has a way to book. Names, the Rio address, and the prices are placeholders.</p>
-    <ol>
-      <li>
-        <a class="option" href="heritage/">
-          <span class="num">01</span>
-          <span class="name">Hollis &amp; Co.</span>
-          <span class="blurb">Classic dark shop. Brass, cream, and a chair you book in your own timezone.</span>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.48-8.41"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m12 3.2 2.7 5.5 6 .9-4.35 4.23 1.03 6L12 17l-5.38 2.83 1.03-6L3.3 9.6l6-.9z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.7-6.5-11a6.5 6.5 0 0 1 13 0c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3.5h3.2l1.6 4.2-2.1 1.4a11 11 0 0 0 5.2 5.2l1.4-2.1 4.2 1.6V17a2.5 2.5 0 0 1-2.7 2.5A15.5 15.5 0 0 1 2.5 6.2 2.5 2.5 0 0 1 5 3.5z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </svg>
+
+  <header class="header" data-header>
+    <div class="wrap header-inner">
+      <a class="brand" href="#topo">
+        <img class="brand-logo" src="images/logo-96.png" width="96" height="96" alt="">
+        <span class="brand-text">
+          <span class="brand-name" data-text="name">Matheus Schiavone</span>
+          <span class="brand-role" data-text="role">Barbeiro em Ipanema</span>
+        </span>
+      </a>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" data-link="booking" href="https://www.trinks.com/ipa-barber-shop" target="_blank" rel="noopener noreferrer">Agendar</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo" aria-labelledby="hero-title" data-hero>
+      <img class="hero-img" data-img="heroImage" data-alt="heroImageAlt" src="images/matheus-schiavone.jpg" width="768" height="1024" alt="Matheus Schiavone fazendo um degradê com máquina e pente em um cliente, na barbearia." fetchpriority="high">
+      <div class="wrap hero-content">
+        <p class="eyebrow"><span data-text="location.shopName">Ipa Barber Shop</span> · <span data-text="location.district">Ipanema</span>, <span data-text="location.city">Rio de Janeiro</span></p>
+        <h1 id="hero-title">
+          <span data-text="name">Matheus Schiavone</span>
+          <span class="h1-sub" data-text="role">Barbeiro em Ipanema</span>
+        </h1>
+        <p class="hero-headline" data-text="headline">Corte e barba com hora marcada, em Ipanema.</p>
+        <p class="hero-intro" data-text="intro">Atendimento na Ipa Barber Shop, no coração de Ipanema. Escolha o serviço e o horário direto no Trinks, ou chame no WhatsApp.</p>
+        <div class="actions">
+          <a class="btn btn-primary" data-link="booking" href="https://www.trinks.com/ipa-barber-shop" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Agendar no Trinks
+          </a>
+          <a class="btn btn-ghost" data-link="whatsapp" href="https://wa.me/5521966015528?text=Ol%C3%A1%2C%20Matheus!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <nav class="quick" aria-label="Contatos rápidos">
+      <div class="wrap quick-grid">
+        <a class="quick-link" data-link="booking" href="https://www.trinks.com/ipa-barber-shop" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+          <span><strong>Agendar</strong><small>Pelo Trinks</small></span>
         </a>
-      </li>
-      <li>
-        <a class="option" href="editorial/">
-          <span class="num">02</span>
-          <span class="name">Atelier Corte</span>
-          <span class="blurb">Black, bone, and one red button. A lookbook more than a traditional shop.</span>
+        <a class="quick-link" data-link="whatsapp" href="https://wa.me/5521966015528?text=Ol%C3%A1%2C%20Matheus!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          <span><strong>WhatsApp</strong><small data-text="contact.phoneDisplay">+55 21 96601-5528</small></span>
         </a>
-      </li>
-      <li>
-        <a class="option" href="sunlit/">
-          <span class="num">03</span>
-          <span class="name">Casa Norte</span>
-          <span class="blurb">Bright and practical, with a “visiting from the US” section and WhatsApp.</span>
+        <a class="quick-link" data-link="instagram" href="https://www.instagram.com/br.matheus.schiavone/" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+          <span><strong>Instagram</strong><small>@<span data-text="contact.instagramUser">br.matheus.schiavone</span></small></span>
         </a>
-      </li>
-    </ol>
-    <footer>Open a concept, then use your real shop name, city, photos, and prices when you choose one.</footer>
+        <a class="quick-link" data-link="google" href="https://www.google.com/maps/search/?api=1&amp;query=Matheus+Schiavone+Barber%2C+Rio+de+Janeiro%2C+RJ" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+          <span><strong>Google</strong><small>Perfil no Google</small></span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="section" id="sobre" aria-labelledby="sobre-title">
+      <div class="wrap about">
+        <figure class="about-media" data-reveal>
+          <img data-img="about.image" data-alt="about.imageAlt" src="images/logo.jpg" width="640" height="640" alt="Logo de Matheus Schiavone: monograma MS prateado com uma coroa." loading="lazy" decoding="async">
+        </figure>
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow">Sobre</p>
+          <h2 id="sobre-title" data-text="about.title">Quem é Matheus Schiavone</h2>
+          <p class="lead" data-text="about.text">Matheus Schiavone é barbeiro na Ipa Barber Shop, em Ipanema, Rio de Janeiro. Cada atendimento começa com uma conversa rápida sobre o que você quer, para o corte e a barba saírem do seu jeito.</p>
+          <dl class="facts">
+            <div>
+              <dt>Onde</dt>
+              <dd><span data-text="location.shopName">Ipa Barber Shop</span>, <span data-text="location.district">Ipanema</span></dd>
+            </div>
+            <div>
+              <dt>Idiomas</dt>
+              <dd data-text="languages">Português, inglês e espanhol</dd>
+            </div>
+            <div>
+              <dt>Pagamento</dt>
+              <dd data-text="payments">Cartões de crédito e débito, PIX e dinheiro</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="servicos" aria-labelledby="servicos-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Serviços</p>
+          <h2 id="servicos-title">O que você pode agendar</h2>
+          <p class="section-note" data-text="servicesNote">Valores e duração atualizados no Trinks, na hora de agendar.</p>
+        </header>
+        <ul class="services" data-list="services">
+          <li class="service">
+            <div><h3>Corte</h3><p>Corte masculino com acabamento.</p></div>
+            <p class="service-meta"><span class="service-price is-empty">Consulte no Trinks</span></p>
+          </li>
+          <li class="service">
+            <div><h3>Barba</h3><p>Desenho, alinhamento e acabamento da barba.</p></div>
+            <p class="service-meta"><span class="service-price is-empty">Consulte no Trinks</span></p>
+          </li>
+          <li class="service">
+            <div><h3>Corte + barba</h3><p>Os dois serviços no mesmo horário.</p></div>
+            <p class="service-meta"><span class="service-price is-empty">Consulte no Trinks</span></p>
+          </li>
+        </ul>
+        <div class="section-cta">
+          <a class="btn btn-primary" data-link="booking" href="https://www.trinks.com/ipa-barber-shop" target="_blank" rel="noopener noreferrer">
+            Ver horários livres no Trinks<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="wrap">
+        <header class="section-head section-head-row" data-reveal>
+          <div>
+            <p class="eyebrow">Portfólio</p>
+            <h2 id="portfolio-title">Cortes e barbas</h2>
+          </div>
+          <a class="text-link" data-link="instagram" href="https://www.instagram.com/br.matheus.schiavone/" target="_blank" rel="noopener noreferrer">
+            Mais fotos no Instagram<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </header>
+        <ul class="gallery" data-list="gallery">
+          <li><figure><img src="images/portfolio-degrade.jpg" width="768" height="1024" alt="Cliente de perfil com cabelo curto e degradê alto nas laterais." loading="lazy" decoding="async"><figcaption>Degradê</figcaption></figure></li>
+          <li><figure><img src="images/portfolio-cachos.jpg" width="768" height="1024" alt="Cliente de perfil com cabelo cacheado, laterais baixas e barba alinhada." loading="lazy" decoding="async"><figcaption>Cachos e barba</figcaption></figure></li>
+          <li><figure><img src="images/portfolio-degrade-textura.jpg" width="768" height="1024" alt="Cliente de perfil com degradê nas laterais e textura no topo." loading="lazy" decoding="async"><figcaption>Degradê com textura</figcaption></figure></li>
+          <li><figure><img src="images/portfolio-ferramentas.jpg" width="1024" height="682" alt="Tesouras, pente, máquinas de corte e pomadas sobre uma bancada de madeira." loading="lazy" decoding="async"><figcaption>Ferramentas</figcaption></figure></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contato" aria-labelledby="contato-title">
+      <div class="wrap contact">
+        <div class="contact-book" data-reveal>
+          <p class="eyebrow">Agendamento</p>
+          <h2 id="contato-title">Agende seu horário</h2>
+          <p class="lead">Escolha o serviço, o dia e o horário no Trinks. Se preferir conversar antes, chame no WhatsApp.</p>
+          <div class="actions">
+            <a class="btn btn-primary" data-link="booking" href="https://www.trinks.com/ipa-barber-shop" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Agendar no Trinks
+            </a>
+            <a class="btn btn-ghost" data-link="whatsapp" href="https://wa.me/5521966015528?text=Ol%C3%A1%2C%20Matheus!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp
+            </a>
+          </div>
+          <ul class="contact-list">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              <a data-link="phone" data-text="contact.phoneDisplay" href="tel:+5521966015528">+55 21 96601-5528</a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+              <a data-link="instagram" href="https://www.instagram.com/br.matheus.schiavone/" target="_blank" rel="noopener noreferrer">@<span data-text="contact.instagramUser">br.matheus.schiavone</span></a>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+              <a data-link="google" href="https://www.google.com/maps/search/?api=1&amp;query=Matheus+Schiavone+Barber%2C+Rio+de+Janeiro%2C+RJ" target="_blank" rel="noopener noreferrer">Perfil no Google</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-visit" data-reveal>
+          <h3>Localização</h3>
+          <address>
+            <strong data-text="location.shopName">Ipa Barber Shop</strong><br>
+            <span data-text="location.street">Rua Prudente de Morais, 167, Loja A</span><br>
+            <span data-text="location.district">Ipanema</span>, <span data-text="location.city">Rio de Janeiro</span> – <span data-text="location.state">RJ</span><br>
+            CEP <span data-text="location.zip">22420-041</span>
+          </address>
+          <div class="actions actions-compact">
+            <a class="btn btn-ghost btn-sm" data-link="directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua%20Prudente%20de%20Morais%2C%20167%2C%20Loja%20A%2C%20Ipanema%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022420-041" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Como chegar
+            </a>
+            <a class="btn btn-ghost btn-sm" data-link="google" href="https://www.google.com/maps/search/?api=1&amp;query=Matheus+Schiavone+Barber%2C+Rio+de+Janeiro%2C+RJ" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>Ver no Google
+            </a>
+          </div>
+
+          <h3>Horários</h3>
+          <dl class="hours" data-list="hours">
+            <div><dt>Segunda a sábado</dt><dd>09:00 – 20:00</dd></div>
+            <div><dt>Domingo</dt><dd>10:00 – 16:00</dd></div>
+          </dl>
+          <p class="note" data-text="hoursNote">Horário de funcionamento da Ipa Barber Shop. Os horários livres do Matheus aparecem no Trinks.</p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="brand-name" data-text="name">Matheus Schiavone</p>
+        <p class="footer-sub"><span data-text="role">Barbeiro em Ipanema</span> · <span data-text="location.shopName">Ipa Barber Shop</span></p>
+      </div>
+      <nav class="footer-links" aria-label="Links de contato">
+        <a data-link="booking" href="https://www.trinks.com/ipa-barber-shop" target="_blank" rel="noopener noreferrer">Trinks</a>
+        <a data-link="whatsapp" href="https://wa.me/5521966015528?text=Ol%C3%A1%2C%20Matheus!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a data-link="instagram" href="https://www.instagram.com/br.matheus.schiavone/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a data-link="google" href="https://www.google.com/maps/search/?api=1&amp;query=Matheus+Schiavone+Barber%2C+Rio+de+Janeiro%2C+RJ" target="_blank" rel="noopener noreferrer">Google</a>
+      </nav>
+      <p class="footer-copy">© <span data-year>2026</span> <span data-text="name">Matheus Schiavone</span></p>
+    </div>
+  </footer>
+
+  <div class="mobile-bar" data-mobile-bar>
+    <a class="btn btn-primary" data-link="booking" href="https://www.trinks.com/ipa-barber-shop" target="_blank" rel="noopener noreferrer">
+      <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Agendar
+    </a>
+    <a class="btn btn-ghost" data-link="whatsapp" href="https://wa.me/5521966015528?text=Ol%C3%A1%2C%20Matheus!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener noreferrer">
+      <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp
+    </a>
+  </div>
 </body>
 </html>
